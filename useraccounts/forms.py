@@ -7,7 +7,7 @@ from .models import UserProfle
 class RegistrationForm(forms.Form):
     username = forms.CharField(label = 'Username',max_length=50,required=True)
     first_name = forms.CharField(label = 'First name',required=True,max_length=140)
-    last_name = forms.CharField(label = 'Last Name',max_length=140,required=False)
+    last_name = forms.CharField(label = 'Last name',max_length=140,required=False)
     email = forms.EmailField(label = 'Email', max_length=50,required=True)
     password = forms.CharField(label='Password',widget=PasswordInput(),required=True)
     address = forms.CharField(label='Address', max_length=250,required=False)
@@ -21,7 +21,7 @@ class LoginForm(forms.Form):
 class EditForm(forms.ModelForm):
     username = forms.CharField(label = 'Username',max_length=50,required=True)
     first_name = forms.CharField(label = 'First name',required=True,max_length=140)
-    last_name = forms.CharField(label = 'Last Name',max_length=140,required=False)
+    last_name = forms.CharField(label = 'Last name',max_length=140,required=False)
     # password = forms.CharField(label='Password',widget=PasswordInput(),required=True)
     address = forms.CharField(label='Address', max_length=250,required=False)
 
